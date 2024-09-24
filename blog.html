@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- DaisyUI CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- customized tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                navber: '#F9F7F3',
+                btn: '#B4F461',
+                secondbtn: '#1111114D',
+              },
+              fontFamily : {
+            primaryfont: 'Lexend',
+           },
+            },
+          },
+        }
+      </script>
+</head>
+<body class="text-primaryfont">
+  <header class="sticky top-0 z-50 transition-backdrop-filter duration-300 ease-in-out">
+    <div id="nav" class="bg-navber">
+        <nav class="w-full h-24">
+            <div class="w-10/12 mx-auto navbar">
+                <div class="navbar-start mt-1">
+                    <div class="dropdown flex justify-center items-center">
+                        <div role="button" class="btn btn-ghost btn-circle">
+                            <a href="./index.html" target="_parent" class="btn flex justify-center items-center pl-2 pr-2 pt-1 pb-1 bg-btn text-lg font-semibold h-12 w-24">
+                                Home
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-center mt-1 hidden md:flex">
+                    <div class="flex items-center justify-center gap-3">
+                        <img src="./assets/logo.png" class="h-10" alt="Logo">
+                        <h1 class="text-xl mt-5 text-black font-semibold">Donate Bangladesh</h1>
+                   
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="flex justify-center items-center gap-1">
+                        <img src="./assets/coin.png" alt="Coin Icon">
+                        <p class="text-gray-500 text-lg"><span id="originalamount">5500 </span> BDT</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+   
+</header>
+    
+
+    <main>
+<!-- history and donat button -->
+<section class="lg:mt-12 mt-5 mb-5 lg:mb-10">
+  <div class="w-11/12 lg:w-8/12 mx-auto">
+    <h1 class="text-4xl font-bold text-black mb-5 text-center">Important FAQ
+    </h1>
+    <div class="flex">
+        <div class="space-y-5">
+            <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each element, attribute, and piece of content in the HTML or XML document is treated as a node in that tree. This allows scripts, typically written in JavaScript, to dynamically access and manipulate the structure, style, and content of a webpage.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium"> How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>To select an element from the DOM in JavaScript, there are several methods available. Each method provides different ways to target elements based on attributes like ID, class, tag name, or other selectors.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation is a technique in the DOM where you take advantage of event bubbling (or event propagation) to handle events more efficiently. Instead of adding event listeners to individual child elements, you place a single event listener on a common parent element. The listener can capture events from its child elements as the events "bubble up" through the DOM.</p>
+                </div>
+
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>We can manipulate an element's attributes and styles in the DOM using JavaScript in various ways. Below are the common methods for handling attributes and styles.</p>
+                </div>
+                
+              </div>
+
+
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium"> What are JavaScript closures, and how do they work?</div>
+                <div class="collapse-content">
+                  <p>A closure is a feature in JavaScript that allows a function to access variables from its outer (enclosing) scope even after that scope has finished executing. Closures are created every time a function is defined, and they are a powerful tool for data encapsulation and maintaining state in a functional programming style.</p>
+                </div>
+                
+              </div>
+
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What are Promises in JavaScript, and how do they improve asynchronous programming?</div>
+                <div class="collapse-content">
+                  <p>Promises are objects in JavaScript that represent the eventual completion (or failure) of an asynchronous operation and its resulting value. They provide a cleaner and more manageable way to handle asynchronous operations compared to traditional callback functions.</p>
+                </div>
+                
+              </div>
+              <div class="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium"> How can you efficiently handle multiple events on the same element in the DOM using JavaScript?</div>
+                <div class="collapse-content">
+                  <p>Instead of attaching separate event listeners to multiple child elements, attach a single listener to a common ancestor. This takes advantage of event bubbling, reducing the number of listeners and improving performance.
+                    js</p>
+                </div>
+                
+              </div>
+            
+        </div>
+       
+  </div>
+ 
+</section>
+
+    </main>
+    <footer class="bg-navber h-20">
+
+    </footer>
+   
+    <script src="./homepage.js"></script>
+</body>
+</html>
