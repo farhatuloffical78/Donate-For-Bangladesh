@@ -14,6 +14,7 @@ window.addEventListener('scroll', function() {
     header.classList.remove('backdrop-filter','bg-opacity-30', 'backdrop-blur-lg' ); 
   }
 });
+
 // Shared function
 // get input value
 function getInputById(id) {
