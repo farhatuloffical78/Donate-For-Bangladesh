@@ -1,4 +1,4 @@
-// sticky scorlling part
+// sticky scrolling part
 
 window.addEventListener('scroll', function() {
   const header = document.querySelector('header');
